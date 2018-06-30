@@ -22,4 +22,6 @@ if select="$(echo 'SELECT 1' | mysql "${args[@]}")" && [ "$select" = '1' ]; then
 	exit 0
 fi
 
+echo "MYSQL NOT RUNNING (${s})"
+
 exit 1
